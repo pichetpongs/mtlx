@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <title>ระบบบันทึก/แสดง สิทธิ์จอดพาหนะ</title>
     <script>
+      const cache = "&_ts=" + Date.now();
       const params = window.location.search;
-      const target = "https://pichetpongs.github.io/parking.sticker/mtlx/" + params;
+      const target = "https://pichetpongs.github.io/parking.sticker/mtlx/" + params + cache;
       location.href = target;
     </script>
   </head>
